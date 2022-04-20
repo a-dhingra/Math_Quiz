@@ -12,10 +12,10 @@ from csv import DictWriter
 # - Ensure GIT SDLC
 # - creating a csv record for each run
 #         - name,time_of_run,score,incorrect_question_list,time_taken
-# - Ayaan :
+# - Biggie :
 #      - bigger numbers
 #      - add decimals support
-#      - Change 'BAN_NEGATIVE_NUMBERS' to False if name == Ayaan
+#      - Change 'BAN_NEGATIVE_NUMBERS' to False if name == Biggie
 # - Enable app to be run on Chromebook (think Streamlit)
 # - Create a webapp for Data Analysis (Streamlit)
 # - Port everything to cloud
@@ -32,10 +32,10 @@ RECORD_KEEPING_BOOK = r'./test_data.csv'
 
 
 def define_operator():
-    name = str.casefold(input('Are you Ayaan or Ira?: '))
-    if name == 'ayaan':
+    name = str.casefold(input('Are you Biggie or Chiggie?: '))
+    if name == 'biggie':
         return OPERATORS_OLD, name
-    elif name == 'ira':
+    elif name == 'chiggie':
         return OPERATORS_YOUNG, name
     else:
         print("No intruders allowed!!! Go away Boba Fett!!! :P\n\n")
